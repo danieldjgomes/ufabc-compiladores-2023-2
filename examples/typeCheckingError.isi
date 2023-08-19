@@ -1,0 +1,8 @@
+programa
+    declare a::int := 10.
+    declare b::real := 10.0.
+
+    if (a == b):
+        escrevaLinha("Oh noooo.").
+    fim
+fimprog

@@ -1,0 +1,75 @@
+programa
+    declare a,b,c,d.
+	escreva("Meu primeiro programa em ISI").
+	leia( a ).
+	leia( b ).
+	c := a + b.
+	escreva("O resultado da soma vale").
+	escreva( c ). # Testando comentário
+
+    # Testando comentário
+    1234567890.
+    123_456_789.
+
+    0o12345670.
+    0o12_345_670.
+
+    0x123456789ABCDEF0.
+    0x1_234_567_89A_BCD_EF0.
+
+    0b0101101010101010.
+    0b01_01_10_10_10_10_10_10.
+
+    10,87.
+    8e12.
+    9E19.
+
+    3 + 2 * 3.
+
+    .
+    ..
+
+    declare d := 10.
+    declare f, g := 1,1.
+
+    se falso:
+        a := b.
+    fim
+
+    se a:
+        escreva("aaaa").
+    senao:
+        escreva("UUUUU").
+    fim
+
+    se verdade:
+        f := g.
+    senao se d:
+        f := d.
+    fim
+
+    enquanto d:
+        a := d.
+    fim
+
+    enquanto d:
+        continue.
+    fim
+
+    enquanto d:
+        pare.
+    fim
+
+    a = b.
+    a != b.
+    a > b.
+    a < b.
+    a >= b.
+    a <= b.
+
+    faça:
+        a := a + 1.
+        b := b * 2.
+        c := c - 1.
+    enquanto c != 0.
+fimprog

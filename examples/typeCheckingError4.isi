@@ -1,0 +1,5 @@
+programa
+    declare a::int := 0.
+
+    a := 2 + 3,0.
+fimprog

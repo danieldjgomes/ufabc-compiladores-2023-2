@@ -1,0 +1,83 @@
+programa
+    # Formas de declarar variáveis
+    declare a.
+    declare b := 10.
+    declare c::real.
+    declare d::txt := "Olá Mundo".
+
+    # Atribuição
+    # Note que se o tipo não foi especificado, ocorre uma inferência de tipos simples durante a atribuição
+    a := verdade.
+
+    # Funções especiais
+    # Imprime texto ou variável ou literal e pula linha no final
+	escrevaLinha("Meu primeiro programa em ISI").
+
+    # O mesmo que `escrevaLinha`, mas sem pular linha no final
+    escreva(d).
+
+    # Lê do usuário e salva na variável passada
+    # Pode resultar em erro de runtime se o input não for valido para o tipo da variável.
+	leia(a).
+	leia(b).
+
+    # Literais
+    # int
+    b := 100_000. # Podem ser separados por `_` para melhor leitura
+    b := 0o777_656. # Octal
+    b := 0xDEAD_BEEF. # Hexadecimal
+    b := 0b0011_0000_1111. # Binário
+
+    # real
+    c := 10,0. # Classico real
+    c := 1,0E9. # Exponencial 1,0 * 10^9
+
+    # txt
+    d := "texto".
+
+    # bool
+    a := falso.
+    a := verdade.
+
+    # se
+    se (a):
+        escrevaLinha("`a` é verdade").
+    fim
+
+    se (neg a):
+        escrevaLinha("`a` é falso").
+    senao:
+        escrevaLinha("`a` é verdadeiro").
+    fim
+
+    se (a):
+        escrevaLinha("`a` é verdade").
+    senao se (b < 10):
+        escrevaLinha("`a` não é verdade e b < 10").
+    fim
+
+    se (a e b < 10):
+        escrevaLinha("`a` é verdade e b < 10").
+    senao se (c < 10,1):
+        escrevaLinha("Vcs entenderam né?").
+    senao:
+        escrevaLinha("Está cansativo isso aqui.").
+    fim
+
+    # enquanto
+    enquanto (b < 100):
+        se (b > 10):
+            b := b + 2.
+            continue.
+        fim
+
+        b := b + 1.
+    fim
+
+    # faça enquanto
+    faça:
+        c := c + 0,1.
+    fim
+    enquanto (c != 13,2).
+
+fimprog

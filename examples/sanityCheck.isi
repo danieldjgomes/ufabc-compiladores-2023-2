@@ -1,0 +1,23 @@
+programa
+    declare a := 10.
+    declare b.
+    declare c::bool.
+
+    leia(a).
+
+    enquanto (a != 100):
+        a := a + 1.
+        escrevaLinha(a).
+    fim
+
+    escreva("O `a` tem valor: ").
+    escrevaLinha(a).
+
+    faça:
+        a := a + 2.
+        pare.
+    fim
+    enquanto (a != 200).
+
+    escrevaLinha("Hello " + "World").
+fimprog

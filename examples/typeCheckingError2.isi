@@ -1,0 +1,5 @@
+programa
+    declare a::int := 10.
+
+    a := verdade.
+fimprog

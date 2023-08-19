@@ -1,0 +1,5 @@
+programa
+    declare a::txt := "Teste".
+
+    a := neg a.
+fimprog
